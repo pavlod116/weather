@@ -1,2 +1,3 @@
-
-const String weather = 'Погода';
+class AppStrings {
+   static const String weather = 'Погода';
+}

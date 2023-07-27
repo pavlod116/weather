@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather/ui/constants/AppColors.dart';
 import 'package:weather/ui/constants/AppString.dart';
+import 'package:weather/ui/screens/home/widget/build_location_point.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,12 +14,14 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      backgroundColor: AppColor.background,
+      body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Text(weather,
-              style: TextStyle(fontSize: 20, color: black),
+            const LocationPoint(),
+            const Text(AppStrings.weather,
+              style: TextStyle(fontSize: 20, color: AppColor.black),
             ),
             const SizedBox(
               height: 10,
