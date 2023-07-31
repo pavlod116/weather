@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-class HomeViewModel extends ChangeNotifier{
+class HomeViewModel extends ChangeNotifier {
 
 }
