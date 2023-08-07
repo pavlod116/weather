@@ -18,16 +18,19 @@ class ButtonNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ButtonNavigationBarViewModel>(builder: (_, model, child) {
-      return Scaffold(
-          body: PageView(
-            controller: model.pageController,
-            children: const <Widget>[
-              HomeView(),
-              CompassView(),
-              NotesView(),
-              UsersView(),
-            ],
+    return Consumer<ButtonNavigationBarViewModel>(
+      builder: (_, model, child) {
+        return Scaffold(
+          body: SafeArea(
+            child: PageView(
+              controller: model.pageController,
+              children: const <Widget>[
+                HomeView(),
+                CompassView(),
+                NotesView(),
+                UsersView(),
+              ],
+            ),
           ),
           bottomNavigationBar: Theme(
             data: Theme.of(context).copyWith(
@@ -62,7 +65,9 @@ class ButtonNavigationBar extends StatelessWidget {
               currentIndex: model.currentIndex,
               onTap: (index) => model.navigation(index),
             ),
-          ));
-    });
+          ),
+        );
+      },
+    );
   }
 }
