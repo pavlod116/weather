@@ -1,4 +1,4 @@
 class AppImage {
-  static String home = 'assets/images/home.png';
-  static String setting = 'assets/images/setting.png';
+  static const String setting = 'assets/images/setting.png';
+  static const String notification = 'assets/images/notification.png';
 }

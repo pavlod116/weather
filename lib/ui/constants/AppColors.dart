@@ -7,5 +7,5 @@ class AppColor{
  static const Color cartBackground = Color(0xFF161616);
  static const Color textColor = Color(0xFF4B4A4B);
  static const Color onUseIcon = Color(0xFFA6A5A6);
- static const Color settingIcon = Color(0xFFD5D5D5);
+ static const Color radiusIcon = Color(0xFFD5D5D5);
 }
