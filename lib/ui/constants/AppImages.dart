@@ -5,4 +5,5 @@ class AppImage {
   static const String searchIcon = 'assets/images/search.png';
   static const String sunLittleRain = 'assets/images/sunLittleRain.png';
   static const String sunCloudLittleRain = 'assets/images/sunCloudLittleRain.png';
+  static const String notificationSetting = 'assets/images/notificationSetting.png';
 }
