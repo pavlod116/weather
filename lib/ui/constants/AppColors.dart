@@ -10,4 +10,5 @@ class AppColor {
   static const Color radiusIcon = Color(0xFFD5D5D5);
   static const Color searchBackground = Color(0xFFEBEBEC);
   static const Color iconSearch = Color(0xFFA09F9F);
+  static const Color divider = Color(0xFF908F90);
 }
