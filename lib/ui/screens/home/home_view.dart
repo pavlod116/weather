@@ -4,10 +4,10 @@ import 'package:weather/ui/constants/AppColors.dart';
 import 'package:weather/ui/constants/AppImages.dart';
 import 'package:weather/ui/constants/AppString.dart';
 import 'package:weather/ui/screens/home/home_view_model.dart';
-import 'package:weather/ui/widgets/cart_widget.dart';
+import 'package:weather/ui/widgets/big_cart_widget.dart';
 import 'package:weather/ui/widgets/custom_text_form_field.dart';
 import 'package:weather/ui/widgets/icon_widget.dart';
-import 'package:weather/ui/widgets/list_cart_widget.dart';
+import 'package:weather/ui/widgets/list_mini_cart_widget.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({
@@ -24,6 +24,7 @@ class _HomeViewState extends State<HomeView> {
     return Consumer<HomeViewModel>(
       builder: (_, model, child) {
         return Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 30, right: 30, top: 20),
@@ -67,13 +68,13 @@ class _HomeViewState extends State<HomeView> {
               child: ListView.builder(
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 20),
                 scrollDirection: Axis.horizontal,
-                itemCount: listCart.length,
+                itemCount: listMiniCart.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return listCart[index];
+                  return listMiniCart[index];
                 },
               ),
             ),
-            cartWidget(),
+            bigCartWidget(),
           ],
         );
       },
