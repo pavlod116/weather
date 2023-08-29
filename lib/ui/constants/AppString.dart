@@ -11,4 +11,8 @@ class AppStrings {
   static const String city = 'Los Angeles';
   static const String today = 'Today';
   static const String nextDay = 'Next 14 Days  >';
+  static const String settings = 'Settings';
+  static const String temperature = 'Температура в градусах ';
+  static const String airHumidity = 'Вологість повітря';
+  static const String darkTopic = 'Темна тема';
 }

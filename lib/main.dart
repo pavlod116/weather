@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:weather/ui/screens/button_navigation_bar/button_navigation_bar_view_model.dart';
 import 'package:weather/ui/screens/compass/compass_view_model.dart';
 import 'package:weather/ui/screens/home/home_view_model.dart';
+import 'package:weather/ui/screens/settings/setting_view_model.dart';
 import 'package:weather/weather.dart';
 
 void main() {
@@ -11,6 +12,7 @@ void main() {
       ChangeNotifierProvider(create: (_) => HomeViewModel()),
       ChangeNotifierProvider(create: (_) => ButtonNavigationBarViewModel()),
       ChangeNotifierProvider(create: (_) => CompassViewModel()),
+      ChangeNotifierProvider(create: (_) => SettingViewModel()),
     ], child: const Weather()),
   );
 }
