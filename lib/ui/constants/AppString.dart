@@ -6,4 +6,9 @@ class AppStrings {
   static const String degree = '27°';
   static const String monday = 'Monday';
   static const String date = '15 May 2022';
+  static const String dayDate = 'Tuesday,14  May';
+  static const String sunnyCloudy = 'Sunny Cloudy';
+  static const String city = 'Los Angeles';
+  static const String today = 'Today';
+  static const String nextDay = 'Next 14 Days  >';
 }

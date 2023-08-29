@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather/ui/constants/AppColors.dart';
 import 'package:weather/ui/constants/AppImages.dart';
 
-List listCart = <Widget>[
+List listMiniCart = <Widget>[
   Padding(
     padding: const EdgeInsets.only(left: 15, right: 15),
     child: Container(

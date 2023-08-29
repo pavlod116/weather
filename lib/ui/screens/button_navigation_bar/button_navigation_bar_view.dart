@@ -21,6 +21,7 @@ class ButtonNavigationBar extends StatelessWidget {
     return Consumer<ButtonNavigationBarViewModel>(
       builder: (_, model, child) {
         return Scaffold(
+          resizeToAvoidBottomInset: false,
           backgroundColor: AppColor.background,
           body: SafeArea(
             child: PageView(
